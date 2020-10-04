@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() => runApp(MyApp());
 
@@ -35,23 +36,32 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                  ),
-                  child: Center(
-                    child: Text(
-                      'Container 2',
-                      textAlign: TextAlign.center,
+                Transform.rotate(
+                  angle: pi / 4,
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Container 2',
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
-                )
+                ),
               ],
             ),
             Column(
               children: [
+                Expanded(
+                  flex: 2,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10),
+                  ),
+                ),
                 Container(
                   height: 100,
                   width: 100,
