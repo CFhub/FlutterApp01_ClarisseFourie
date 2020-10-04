@@ -57,30 +57,36 @@ class MyApp extends StatelessWidget {
             Column(
               children: [
                 Expanded(
-                  flex: 2,
+                  flex: 1,
                   child: Padding(
                     padding: const EdgeInsets.all(10),
-                  ),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(color: Colors.yellow),
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Text(
-                      'Container 3',
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(color: Colors.yellow),
+                      child: Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Text(
+                          'Container 3',
+                        ),
+                      ),
                     ),
                   ),
                 ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(color: Colors.blue),
-                  child: Align(
-                    alignment: Alignment.centerRight,
-                    child: Text(
-                      'Container 4',
+                Expanded(
+                  flex: 1,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(color: Colors.blue),
+                      child: Align(
+                        alignment: Alignment.centerRight,
+                        child: Text(
+                          'Container 4',
+                        ),
+                      ),
                     ),
                   ),
                 ),
